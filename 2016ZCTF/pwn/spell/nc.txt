@@ -1,0 +1,4 @@
+115.28.27.103 33333
+Please enter the correct spell, I will give you the flag!
+How long of your spell: 12
+At 11:54: you enter the spell: 111111111111

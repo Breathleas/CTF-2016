@@ -1,0 +1,14 @@
+The 90s
+1 Teams solved.
+Description
+nodejs v4.2.6 / Ubuntu 16.04
+nc 52.68.185.227 1984
+
+
+BGM:
+https://youtu.be/Hio0iH1IQl8
+
+
+the90s.zip
+Hint
+None

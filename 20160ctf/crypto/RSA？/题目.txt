@@ -1,0 +1,2 @@
+It seems easy, right?
+Tip: openssl rsautl -encrypt -in FLAG -inkey public.pem -pubin -out flag.enc

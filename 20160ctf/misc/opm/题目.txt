@@ -1,0 +1,4 @@
+×îŠ¤Î¥Ò©`¥í©`
+opm
+
+The flag is 0ctf{answer}

@@ -1,0 +1,18 @@
+Tell me the password.
+Tip 1:
+        All the passwords will be in format of:
+        zctf:[a-z]{3}[A-Za-z][A-Za-z0-9][0-9]{3}
+Tip 2:
+        Be faster!
+Tip 3:
+        sha256("zctf:aaaaA000") = 171f4874561eb0cc1fb435676337bbc6cacf598e3f0ffa
+b3559e84e2f9fbe1c9 , so..
+
+sha256(password) = 171f4874561eb0cc1fb435676337bbc6cacf598e3f0ffab3559e84e2f9fbe
+1c9
+password = zctf:aaaaA000
+Wonderful!
+
+sha256(password) = 71593329cb0f1e8f24c06260d5782c92a1f53d936287c33cf74a6eefd1dad
+442
+password =

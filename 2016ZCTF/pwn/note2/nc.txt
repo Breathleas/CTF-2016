@@ -1,0 +1,11 @@
+115.28.27.103 9002
+Input your name:
+dasdas
+Input your address:
+dsadas
+1.New note
+2.Show  note
+3.Edit note
+4.Delete note
+5.Quit
+option--->>

@@ -1,0 +1,12 @@
+In BCTF 2014, our Full-Feature Technical Advanced Next Generation Multiprime RSA Encryption Decryption System was break down by you hackers!
+
+Now, we've developed our brand new Full-Feature Technical Advanced Next Next Generation Hyper RSA Encryption System! It's unbreakable! Try to break it!
+
+hyper_rsa.zip.250b1e091c6ca7039276b77ebdc7d5b3
+
+$ nc 104.199.132.199 2224
+hint: after you recover the number m, you can get flag using format(m, 'x').decode('hex') in python to get the real flag.
+
+hint2: As seen in other CTFs, you don't need to write the digits down by hand or do OCR.
+
+hint3: To make life easier, e1 begins with digit 1(decimal format), e2 begins with 2(decimal format).

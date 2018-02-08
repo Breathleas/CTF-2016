@@ -1,0 +1,24 @@
+F:\tools\other tools\ÄÚÍøÉøÍ¸>nc 115.28.27.103 44444
+Welcome to ZCTF MTD Chinese restaurant!
+Who are you?
+Please enter your name: saa
+Hello saa, you are the luckey 27508752th guest.
+I am your waiter longlong. I will give you 5 dollars as a present, please have a
+ good dinner!
+Are you from China? (y/n) y
+Dear compatriot, I will hand out a lucky red packet to you.
+Do you want to open the red packet? (y/n) y
+Congratulations,you have got 5 dollars as red packet.
+How old are you: 22
+Now please take a order:
+1. Take a staple food.
+2. Take a entree.
+3. Take a soup.
+4. List your menu.
+5. Cancel a order.
+6. Show your account.
+7. Add a comment.
+8. Finish your order.
+1
+Successfully order a staple food, enjoy it!
+Now please take a order:

